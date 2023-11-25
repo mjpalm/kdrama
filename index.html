@@ -1,101 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <style>
-        body {
-            background-image: url('kdrama1.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin: 0;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-        h1{
-            position: fixed;
-            width: 100%;
-            text-align: center;
-            font-size: 50px; /* You should specify the font size here */
-            padding: 10px 0;
-            color: white;
-        }
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
 
-        @keyframes slide1 {
-            from { left: 0; }
-            to { left: 300px; }
-        }
-
-        @keyframes slide2 {
-            from { left: 0; }
-            to { left: 600px; }
-        }
-
-        @keyframes slide3 {
-            from { left: 0; }
-            to { left: 900px; }
-        }
-
-        @keyframes slide4 {
-            from { left: 0; }
-            to { left: 1200px; }
-        }       
-
-        .image {
-            top: 150px;
-            width: 600px;
-            height: 550px;
-            font-weight: bold;
-            position: relative;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            margin: 10px; /* Add margin to create spacing between images */
-        }
-
-        .image1 {
-            animation-name: slide1;
-        }
-
-        .image2 {
-            animation-name: slide2;
-        }
-
-        .image3 {
-            animation-name: slide3;
-        }
-
-        .image4 {
-            animation-name: slide4;
-        }
-
-        .footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            font-size: 30px;
-            padding: 10px 0;
-            color: white;
-        }
-    </style>
 </head>
 <body>
-    <center><h1>Korean Dramas to Binge-watch</h1></center>
+<!-- Header -->
+<nav class="navbar">
+    <div class="navdiv">
+        <div class="logo"><a href="#">KDrama</a></div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#description">Description</a></li>
+            <button><a href="https://www.viu.com/ott/ph/en/category/91/Viu-Original">Watch!</a></button>
+           
+            <a id="aboutButton" href="https://drive.google.com/file/d/15Hv-6KhEqRpniaCl8fjnGIj_YtNff1GF/view?usp=drivesdk">Curriculum Vitae</a>
 
-    <div class="image image1">
-        <img src="list1.jpg" alt="Image 1" width="500" height="450">
+        </ul>
     </div>
+</nav>
+  <!-- End Header -->
 
-    <div class="image image2">
-        <img src="list2.jpg" alt="Image 2" width="500" height="450">
-    </div>
 
-    <div class="image image3">
-        <img src="list3.jpg" alt="Image 3" width="500" height="450">
+
+
+<!--Hero Section-->
+    <section id="hero">
+        <div class="hero content">
+            <div>
+                <h1>Korean Dramas to Binge-watch</h1>
+            </div>
+            
+            <div class="i1 image1">
+                <img src="list1.jpg" alt="Image 1" width="300" height="350">
+            </div>
+        
+            <div class="i2 image2">
+                <img src="list2.jpg" alt="Image 2" width="300" height="350">
+            </div>
+        
+            <div class="i3 image3">
+                <img src="list3.jpg" alt="Image 3" width="300" height="350">
+            </div>
+        </div>
+    </section>
+<!--End Hero Section-->
+
+<!--About Section-->
+    <section id="description">
+        <div class="description-text">
+            <div class="description-top">
+                <h1 class="section-title">Description</h1>
+                <p>Watching K-dramas can be a delightful and culturally enriching experience. 
+                   Whether you're looking for a unique storytelling perspective, well-developed characters, or a dose of romance and emotions, K-dramas have something to offer for a wide range of viewers. 
+                   Give them a try, and you might find yourself hooked on the captivating world of K-dramas.
+                </p>
+            </div>
+        </div>
+    <div class="list">
+        <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+              </button>
+              <ul class="image-list">
+                <img class="image-item" src="k1.jpg" alt="img-1" />
+                <img class="image-item" src="k2.jpg" alt="img-2" />
+                <img class="image-item" src="k3.jpg" alt="img-3" />
+                <img class="image-item" src="k4.jpg" alt="img-4" />
+                <img class="image-item" src="k5.jpg" alt="img-5" />
+                <img class="image-item" src="k6.jpg" alt="img-6" />
+                <img class="image-item" src="k7.jpg" alt="img-7" />
+                <img class="image-item" src="k8.jpg" alt="img-8" />
+                <img class="image-item" src="k9.jpg" alt="img-9" />
+                <img class="image-item" src="k10.jpg" alt="img-10" />
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+            </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
     </div>
+    </section>
+
+<!--End About Section-->
+
+
 </body>
-<footer class="footer">
-    <p><b></b> Find and watch your favorite Korean Dramas.</p>
-    <a href="https://dramacool.city/ "><center>Click for More! </center></a>
-</footer>
 </html>
